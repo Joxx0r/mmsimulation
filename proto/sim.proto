@@ -1,0 +1,11 @@
+
+syntax = "proto3";
+
+package sim;
+
+option go_package = "proto/simproto";
+// A DefaultEvaluationCriteria is used for a match's evaluation_input when using
+// the default evaluator.
+message DefaultEvaluationString {
+  string Value = 1;
+}

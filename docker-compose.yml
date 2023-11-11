@@ -1,0 +1,17 @@
+version: '3'
+services:
+  director:
+    build:
+      context: .
+      dockerfile: ./cmd/director/Dockerfile
+    image: joxxorr/director
+  matchfunction:
+    build:
+      context: .
+      dockerfile: ./cmd/matchfunction/Dockerfile
+    image: joxxorr/matchfunction
+  frontend:
+    build:
+      context: .
+      dockerfile: ./cmd/frontend/Dockerfile
+    image: joxxorr/frontend

@@ -44,7 +44,7 @@ metadata:
   name: frontend
   namespace: mm
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     app: frontend
   template:
